@@ -1,0 +1,22 @@
+.App {
+  min-height: 100vh;
+  background: var(--gradient-background);
+  font-family: var(--font-primary);
+  color: var(--text-primary);
+}
+
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  height: 100%;
+}

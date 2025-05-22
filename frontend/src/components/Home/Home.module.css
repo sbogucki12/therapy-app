@@ -1,0 +1,284 @@
+.home {
+  padding: var(--space-lg) 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Welcome Section */
+.welcome {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  padding: var(--space-2xl);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-xl);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.welcomeTitle {
+  font-size: var(--text-4xl);
+  font-weight: var(--font-bold);
+  color: var(--text-light);
+  margin-bottom: var(--space-md);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.welcomeMessage {
+  font-size: var(--text-lg);
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+  font-weight: var(--font-normal);
+}
+
+/* Section Titles */
+.sectionTitle {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-light);
+  margin-bottom: var(--space-lg);
+  text-align: center;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Recommended Action */
+.recommended {
+  margin-bottom: var(--space-3xl);
+}
+
+.recommendedCard {
+  display: flex;
+  align-items: center;
+  background: var(--gradient-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-decoration: none;
+  color: var(--text-primary);
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+  border: 2px solid transparent;
+}
+
+.recommendedCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--primary-color);
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.recommendedCard.primary {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: var(--text-light);
+}
+
+.recommendedCard.primary:hover {
+  color: var(--text-light);
+}
+
+.cardIcon {
+  font-size: 3rem;
+  margin-right: var(--space-lg);
+  flex-shrink: 0;
+}
+
+.cardContent {
+  flex: 1;
+}
+
+.cardTitle {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-sm);
+}
+
+.cardDescription {
+  font-size: var(--text-base);
+  margin: 0;
+  opacity: 0.9;
+}
+
+.cardArrow {
+  font-size: var(--text-2xl);
+  font-weight: var(--font-bold);
+  margin-left: var(--space-lg);
+  transition: transform var(--transition-fast);
+}
+
+.recommendedCard:hover .cardArrow {
+  transform: translateX(4px);
+}
+
+/* Quick Actions Grid */
+.quickActions {
+  margin-bottom: var(--space-3xl);
+}
+
+.actionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--space-lg);
+}
+
+.actionCard {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-decoration: none;
+  color: var(--text-primary);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  text-align: center;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.actionCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--primary-color);
+  transition: height var(--transition-normal);
+}
+
+.actionCard:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.actionCard:hover::before {
+  height: 100%;
+  opacity: 0.1;
+}
+
+.actionCard.sunrise::before {
+  background: linear-gradient(90deg, #ff9a9e, #fecfef);
+}
+
+.actionCard.sunset::before {
+  background: linear-gradient(90deg, #4facfe, #00f2fe);
+}
+
+.actionCard.journal::before {
+  background: linear-gradient(90deg, #43e97b, #38f9d7);
+}
+
+.actionCard.history::before {
+  background: linear-gradient(90deg, #fa709a, #fee140);
+}
+
+.actionIcon {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-md);
+  display: block;
+}
+
+.actionTitle {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  margin-bottom: var(--space-sm);
+}
+
+.actionDescription {
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Daily Quote */
+.dailyQuote {
+  margin-bottom: var(--space-2xl);
+}
+
+.quoteCard {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.quote {
+  font-size: var(--text-lg);
+  font-style: italic;
+  color: var(--text-light);
+  margin-bottom: var(--space-md);
+  font-family: var(--font-secondary);
+  line-height: 1.6;
+}
+
+.quoteAuthor {
+  font-size: var(--text-base);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: var(--font-medium);
+}
+
+/* Mobile Responsive */
+@media (max-width: 767px) {
+  .home {
+    padding: var(--space-md) 0;
+  }
+  
+  .welcome {
+    padding: var(--space-lg);
+    margin-bottom: var(--space-2xl);
+  }
+  
+  .welcomeTitle {
+    font-size: var(--text-3xl);
+  }
+  
+  .welcomeMessage {
+    font-size: var(--text-base);
+  }
+  
+  .recommendedCard {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-lg);
+  }
+  
+  .cardIcon {
+    margin-right: 0;
+    margin-bottom: var(--space-md);
+  }
+  
+  .cardArrow {
+    margin-left: 0;
+    margin-top: var(--space-md);
+  }
+  
+  .actionsGrid {
+    grid-template-columns: 1fr;
+    gap: var(--space-md);
+  }
+  
+  .actionCard {
+    padding: var(--space-lg);
+  }
+  
+  .quoteCard {
+    padding: var(--space-lg);
+  }
+  
+  .quote {
+    font-size: var(--text-base);
+  }
+}
+
+/* Small mobile adjustments */
+@media (max-width: 480px) {
+  .welcomeTitle {
+    font-size: var(--text-2xl);
+  }
+  
+  .sectionTitle {
+    font-size: var(--text-xl);
+  }
+}

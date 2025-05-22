@@ -1,0 +1,18 @@
+.container {
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.placeholder {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  margin: var(--space-lg) 0;
+  box-shadow: var(--shadow-md);
+}
+
+.placeholder p {
+  font-size: var(--text-lg);
+  color: var(--text-muted);
+  margin: 0;
+}

@@ -1,23 +1,147 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Production builds
+build/
+dist/
+out/
 
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
+# Environment variables and secrets
+.env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+.env.*.local
 
+# API Keys and secrets (be extra careful with these)
+**/secrets.json
+**/config/secrets.*
+**/keys/
+**/*key*.json
+**/*secret*.json
+**/*credential*.json
+aws-credentials.json
+azure-credentials.json
+
+# Personal data and user content
+user-data/
+personal-journal/
+journal-entries/
+user-profiles/
+*.personal.json
+backup-*.json
+
+# Local storage exports and backups
+exports/
+backups/
+data-exports/
+journal-backup-*.json
+affirmation-history-*.json
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+.nyc_output/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# parcel-bundler cache
+.cache/
+.parcel-cache/
+
+# Next.js build output (if you switch to Next.js later)
+.next/
+
+# Nuxt.js build / generate output (if you switch to Nuxt.js later)
+.nuxt/
+
+# Gatsby files (if you switch to Gatsby later)
+.cache/
+public/
+
+# Storybook build outputs
+.out/
+.storybook-out/
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows specific
+desktop.ini
+
+# Personal notes and documentation drafts
+NOTES.md
+TODO.md
+personal-*.md
+draft-*.md
+
+# Local database files
+*.db
+*.sqlite
+*.sqlite3
+local-storage-*.json
+
+# Test files with personal data
+test-data-personal/
+mock-personal-data.json
+
+# Docker
+.dockerignore
+
+# Miscellaneous
+*.tsbuildinfo

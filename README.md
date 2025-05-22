@@ -2,7 +2,7 @@
 
 A mindful, local-first web application for daily affirmations, journaling, and self-reflection. Built with AI-powered personalization while keeping your data private and secure.
 
-![Initial UI Design](https://github.com/sbogucki12/therapy-app/blob/main/frontend/public/media/images/ui-day0.jpg)
+![Initial UI Design](https://github.com/sbogucki12/therapy-app/blob/main/media/images/ui-day0.jpg)
 *Day 0: Initial design with responsive layout, dynamic greetings, and mindful aesthetics*
 
 ## Vision
